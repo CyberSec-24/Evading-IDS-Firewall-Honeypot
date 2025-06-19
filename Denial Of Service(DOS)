@@ -1,0 +1,21 @@
+-> The attacker identifies a point of network processing that requires the allocation of a resource, causing a condition to occur in which all of that resource is consumed. 
+
+-> The resources affected by the attacker are CPU cycles, memory, disk space, and network bandwidth. Attackers monitor and attack the CPU capabilities of the IDS. 
+
+-> This is because the IDS needs half of a CPU cycle to read the packets, detect the purpose of their existence, and then compare them with some location in the saved network state.
+
+-> An IDS requires memory for a variety of tasks such as generating a match for the patterns, saving the TCP connections, maintaining reassembly queues, and producing buffers for the data. 
+
+-> In the initial phase, the system requires memory to read the packets. The system will allocate the memory for network processing operations.
+
+-> The stored events occupy most of the disk space. Most computers have limited disk space. 
+
+-> The attackers can occupy a significant part of the disk space on the IDS by creating and storing a large number of useless events. This renders the IDS useless in terms of storing real events
+
+-> The IDS, unlike an end system, must read everyone’s packets, not just those explicitly sent to it. 
+
+-> An attacker can overload the network with meaningless information and prevent the IDS from keeping up with what is happening on the network.
+
+-> Many IDS today employ central logging servers that are used exclusively to store IDS alert logs. 
+
+-> The central server's function is to centralize alert data so that it is viewed as a whole rather than on a system-by-system basis.
