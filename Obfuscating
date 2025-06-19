@@ -1,0 +1,11 @@
+-> Obfuscation means to make code more difficult to understand or read, generally for privacy or security purposes.
+
+-> A tool called an obfuscator converts a straightforward program into one that works in the same way but which is much more difficult to understand
+
+-> Obfuscating is an IDS evasion technique used by attackers to encode the attack packet payload in such a way that the destination host can only decode the packet but not the IDS.
+
+-> An attacker manipulates the path referenced in the signature to fool the HIDS. Using Unicode characters, an attacker can encode attack packets that the IDS would not recognize but which an IIS web server can decode. 
+
+-> Polymorphic code is another means to circumvent signature-based IDS by creating unique attack patterns so that the attack does not have a single detectable signature.
+
+-> Attackers perform obfuscated attacks on encrypted protocols such as HTTPS
