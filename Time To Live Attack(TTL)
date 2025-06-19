@@ -1,0 +1,9 @@
+-> Each IP packet has a field called Time to Live (TTL), which indicates how many hops the packet can take before a network node discards it. 
+
+-> Each router along a data path decrements this value by 1. When the TTL reaches 0, the packet is dropped, and an ICMP alert notification is sent to the sender. 
+
+-> Typically, when a host sends a packet, it sets the TTL to a high value such that it can reach its destination under normal circumstances. 
+
+-> Different OS use different default initial values for the TTL. Therefore, attackers can guess the number of routers between them and a sending machine, and make assumptions as to what the initial TTL was, thereby guessing which OS a host is running, as a prelude to an attack.
+
+-> To prevent such detection, SmartDefense can change the TTL field of all packets (or all outgoing packets) to a given number
