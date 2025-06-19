@@ -1,0 +1,12 @@
+-> IP packets must follow the standard Maximum Transmission Unit (MTU) size while traveling across the network. 
+
+-> If the packet size is exceeded, it will be split into multiple fragments (“fragmentation”). 
+
+-> The IP header contains of a fragment ID, fragment offset, fragment length, fragments flags, and others besides the original data. 
+
+-> In a network, the flow of packets is irregular; hence, systems need to keep fragments around, wait for future fragments, and then reassemble them in order. 
+
+-> Fragmentation can be used as an attack vector when fragmentation timeouts vary between the IDS and the host.
+
+-> If, for example, the fragment reassembly timeout is 10 s at the IDS and 20 s at the target system, attackers will send the second fragment 15 s after sending the first fragment. 
+In this scenario, the IDS will drop the fragment on receiving the second fragment after its reassembly timeout, but the target host will reassemble the fragments.
