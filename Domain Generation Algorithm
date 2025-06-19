@@ -1,0 +1,11 @@
+-> A domain generation algorithm (DGA) is a software program that attackers can employ to generate numerous new domain names and execute malware code.
+
+-> This program enables them to evade traditional detection mechanisms such as security gateways and signature filters, which generally block static IP addresses and specific domain names. 
+
+-> This technique also helps them change domains frequently and dynamically identify a destination domain for command and control (C2) traffic, rather than relying on static IP addresses or domains
+
+-> DGAs use character sequences to generate a large number of random domain names, which serve as assembly points for attackers to communicate with the C2 servers. 
+
+-> This method involves creating “gibberish” strings, for example, 'isdfcbdjdnfuylt.ru,' while constructing the domain names by generating each letter. 
+
+-> However, if detection engines detect or block a domain, attackers can easily change the domain to remain connected to a C2 server. 
