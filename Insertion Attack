@@ -1,0 +1,15 @@
+-> Insertion is the process by which the attacker confuses the IDS by forcing it to read invalid packets (i.e., the system may not accept the packet addressed to it). 
+
+-> An IDS blindly trusts and accepts a packet that an end system rejects. If a packet is malformed or if it does not reach its actual destination, the packet is invalid. 
+
+-> If the IDS reads an invalid packet, it gets confused. 
+
+-> An attacker exploits this condition and inserts data into the IDS. This attack occurs when the NIDS is less strict in processing packets than the internal network. 
+
+-> It employs pattern-matching algorithms to look for specific patterns of data in a packet or stream of packets. 
+
+-> For example, it might search for the “phf” string in an HTTP request to discover a PHF Common Gateway Interface (CGI) attack. 
+
+-> An attacker who can insert packets into the IDS can prevent pattern matching from working. 
+
+-> For instance, an attacker can send the string “phf” to a web server, attempting to exploit the CGI vulnerability, but force the IDS to read “phoneyf” (by “inserting” the string “oney”) instead.
